@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <td>Type</td>
+        <td>Full Name</td>
+        <td>Latitude</td>
+        <td>Longtitude</td>
+    </tr>
+
+    {% for con in contact %}
+    <tr>
+        <td>{{ con.type }}</td>
+        <td>{{ con.client }}</td>
+        <td>{{ con.latitude }}</td>
+        <td>{{ con.longtitude }}</td>
+    </tr>
+    {% endfor %}
+
+</table>

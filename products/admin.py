@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Order, AboutUs
+from .models import Product, Order, AboutUs, Contact
 from django.forms import ModelForm
 
 
@@ -11,7 +11,7 @@ class ProductsAdmin(admin.ModelAdmin):
 
 admin.site.register(Product, ProductsAdmin)
 
-admin.site.register([Order, AboutUs])
+admin.site.register([Order, AboutUs, Contact])
 #для того чтобы регистрировали наши модели
 
 

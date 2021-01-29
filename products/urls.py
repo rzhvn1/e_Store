@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from .views import products_page, order_page, register_page, all_users_page, about_us_page
+from .views import products_page, order_page, register_page, all_users_page, about_us_page, contact_page
+
 #здесь пути для
 urlpatterns = [
     path('', products_page, name = 'products'),
@@ -8,4 +9,5 @@ urlpatterns = [
     path('register/', register_page),
     path('all_users/', all_users_page),
     path('about_us/', about_us_page),
+    path('contact/', contact_page),
 ]

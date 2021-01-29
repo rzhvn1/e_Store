@@ -38,3 +38,8 @@ def about_us_page(request):
     about_us = AboutUs.objects.all()
     context = {'about_us':about_us}
     return render(request, 'products/about_us.html', context)
+
+def contact_page(request):
+    contact = Contact.objects.all()
+    context = {'contact':contact}
+    return render(request, 'products/contact.html', context)
